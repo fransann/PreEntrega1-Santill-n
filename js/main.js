@@ -30,8 +30,9 @@ if (horario === "mañana") {
     while (hora > 12 || hora < 7) {
         hora = prompt("Error, el horario de mañana es de 7am a 12pm. Ingrese un horario válido: ");
     }
-} else {
-    while (hora > 5 || hora < 9) {
+}
+if(horario === "tarde"){
+    while (hora > 9 || hora < 5) {
         hora = prompt("Error, el horario de tarde es de 5pm a 9pm. Ingrese un horario válido: ");
     }
 }
